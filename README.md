@@ -23,19 +23,26 @@
          - Combining levels of detail in a top-down or bottom-up approach..moving from the `coarse` to the `fine` or vice versa...
 
  - __GRN fitting Method and inference__ 
-   - Why EA ? Genetic Algorithm as an optimization method?
+ Two different approaches for GRN model parameter inference are advocated in the literature: 1)finding relations for the entire network or 2)analysing a single gene at-a-time
+   - Why Genetic Algorithm as an optimization method?
      - these are known to cope well with a large solution space!
      - it can be applied to both synthetic and real "gene expression" data from DNA microarrays.
-     - when only limited data are available, it leads to **under-specfication of the system**`(i.e. the limited number of data points combined with the large number of parameters)`**. Under these circumstances, **EA**s become a good alternative to other fitting methods. as they provide an efficient way of spanning the promising areas of the solution space!
+     - when only limited data are available, it leads to **under-specfication of the system**`(i.e. the limited number of data points combined with the large number of parameters)`**. Under these circumstances, **EA**s become a good alternative to other fitting methods as they provide an efficient way of spanning the promising areas of the solution space!
+     - in general, and in particular EA approaches have the benefit of flexibility in terms of adding **prior information** to the optimisation process.
+       - This can be done at several stages, such as initialisation, fitness evaluation, mutation or crossover, etc.
+       - An example of integrating biological knowledge in the algorithms implemented is using the sparsity of the GRN
+       - previously known interactions could be introduced during initialisation, and during fitness evaluation (edges connecting genes with binding affinities could add to the fitness of the individual). 
    - Checkpoint(A): Scalability?
-     - how it works based on...all the genes or subset of them in the network????
+     - how it works based on...all the genes or the subset of them in the network????
      - quantitative behaviour:
-       - ability to reproduce data (indentifying the most important interactions ?)
+       - ability to reproduce data? (indentifying the most important interactions ?)
        - parameter quality by size?
    
    - Checkpoint(B): Robustness to noise? 
      - With the presence of noise, show best balance for sensitivity-specificity ?
      - With the presence of noise, show best qualitative behaviour ?
+  
+
   
   
 

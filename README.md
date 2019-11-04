@@ -42,9 +42,14 @@
      - With the presence of noise, show best balance for sensitivity-specificity ?
      - With the presence of noise, show best qualitative behaviour ?
   
+  
+  
+  
+## How to elucidate the `regulatory connections` and `interactions` between genes?  proteins and other gene products ?
+NN~; Can we determine **gene interactions** in temporal gene expression data using **genetic algorithms** combined with a **neural network component**?
 
-  
-  
+
+ 
 
 
 

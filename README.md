@@ -1,12 +1,19 @@
 # Gene-Regulatory-Network
+GRN is a collection of **molecular regulators** that interact with `each other` and with `other substances` in the cell to govern the gene expression levels of mRNA and proteins. These play a central role in morphogenesis, the creation of body structures. The regulator can be DNA, RNA, protein and complexes of these. The interaction can be direct or indirect.  
+ - enzymes(catalyst) allows biochemical reaction to occur in our body like a researcher in the lab...like a lock that is open when a specific molecule works as a key.  
+   - transcription process: DNA -> mRNA 
+   - translation process: mRNA -> protein ... so manufacture human, fish,...
+
+Once knowing what kind of genes are expressed in what pattern, we can  ???
 
 > Background?
  - __Reverse engineering of GRNs?__ 
-   - In each type of cell, different genes are expressed (turned on) or silenced (turned off). By identifying which genes in the sick cells are working abnormally, doctors can better diagnose the ailment. One way they do this is to use a **DNA microarray** to determine the expression levels of genes. When a gene is expressed in a cell, it generates `messenger RNA` (mRNA). `**Overexpressed genes** generate more mRNA. This can be detected on the **microarray**`.
+   - In each type of cell, different genes are expressed (turned on) or silenced (turned off). By identifying which genes in the sick cells are working abnormally, doctors can better diagnose the ailment. One way they do this is to use a **DNA microarray** to determine the expression levels of genes. When a gene is expressed, a certain protein is produced. When a gene is expressed in a cell, it generates `messenger RNA` (mRNA). `**Overexpressed genes** generate more mRNA. This can be detected on the **microarray**`.
    - **Technologies** measuring **gene expression levels**(gene turned on) has created a database for inferring GRNs. However, the nature of these data has made this GRN inferring process very difficult and the large scale quantitative analysis on real biological datasets cannot be performed, to date, as existing approaches are not suitable for **real microarray data** which are noisy and insufficient.
 
  - __GRN Model__
-   - The level of mRNA concentrations can be viewed as a snapshot of the genes expression levels under certain conditions. With a large enough set of snapshots, it should be theoretically possible to uncover the underlying gene regulatory network(GRN). 
+   - Mathematical models should be developed to capture the behavior of the system being modeled, and in some cases generate predictions corresponding with experimental observations.
+   - The level of `mRNA concentrations` can be viewed as a snapshot of the genes expression levels **under certain conditions**. With a large enough set of snapshots, it should be theoretically possible to uncover the underlying gene regulatory network(GRN). 
    - **Modeling:** We can find parameters of the GRN model from available data. Once built, these GRN models can be used to predict the behaviour of the organism **under certain conditions**, related to different treatments or diseases(predict its behaviour under different conditions).
      - `genes` are viewed as **variables** that change their (expression) values in time.
        - Depending on the type of variables used, methods can be classiﬁed as discrete or continuous, deterministic or stochastic, or as hybrid methods
@@ -43,10 +50,8 @@
      - With the presence of noise, show best qualitative behaviour ?
   
   
-  
-  
-## How to elucidate the `regulatory connections` and `interactions` between genes?  proteins and other gene products ?
-NN~; Can we determine **gene interactions** in temporal gene expression data using **genetic algorithms** combined with a **neural network component**?
+## How to elucidate the `regulatory connections` and `interactions` between genes, proteins and other gene products ?
+NN~; Can we determine **gene interactions** in temporal gene expression data using **genetic algorithms** combined with a **neural network component**? 
 
 
  

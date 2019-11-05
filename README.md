@@ -84,9 +84,28 @@ Two common difficulties in **Gene_Expression_Analysis**:
    - the **activation of the regulated gene**. 
    - coz...**one single gene is unlikely to classify a sample or affect another gene**. In such circumstances, the search space grows to a much larger potential search space of **countless combinations**.
 
+## Extracting GRN from temporal gene expression data 
+How to deal with "curse of dimensionality" (large number of different models that display broadly the same behavior) caused mainly by "underdeterminism"..?
+ - The majority of the methods make use of automated or human-derived methods for **determining functional groups of genes**(clustering) within the data. By using clustering, these approaches are able to discover hypothetical regulatory connections between groups of genes. And they also provide biologically plausible networks, provided that additional information about the organism is available. However, while the volume of additional information is increasing, there remain a large number of gene expression data sets for which this extra information is not available.
+ - The neural-genetic approach mitigates underdeterminism in two significant ways:
+   - 1) each gene has a restriction on the number of genes that can affect it in the network.
+     - ex) the number of connections allowed between genes is limited to between one and five and between two and three on average
+     - This restriction is in line with ideas developed from chaos theory, which proposed that the behavior of one gene is regulated by only a handful of other genes in the network.
+   - 2) the approach can be repeated a number of times and only those genes that are present in a majority of the runs are allowed to be included in the final network. These restrictions are designed to allow the algorithm to discover robust connection networks.
 
+## Extracting GRN from temporal gene expression data & ML
+A number of methods have been used to generate GRN from (often artificial) data, including:Bayesian Networks, clustering, unsupervised neural networks, evolutionary algorithms, supervised learning algorithms.
 
-
+a) Evolutionary approach using genetic algorithms(GAs) to extract GRN from gene expression data
+ - __Weight Matrix Method:__
+   - The chromosome of the GA is an encoded matrix of float values that correspond to the weight matrix between gene timesteps. Each individual, therefore, is a representation of the weight matrix.
+   - The weight matrix is a set of connections from -1 to +1 that are summed and propagated through the sigmoid function to give the activation levels for each of the genes (which have previously been normalized).
+   - The fitness function for the GA is calculated as the sum, over all timesteps, of the differences between the predicted and actual levels of activation for the gene expression.
+   - The GA is then allowed to use its operators (crossover and mutation) to optimize this matrix of weights.
+   - Another objective factored into the fitness function is that sparse matrices are required in this problem, to remove the possibility of all genes having an effect on all other genes. Therefore, a measure of the number of zero weights (signifying no effect) in the chromosome is used so that the fitness of individuals is partly based on the number of zeroes in the solution.
+   
+b) neural-genetic approach   
+ - __RGANN (Repeated Genetic Algorithm with Neural Network):__ A single layer ANN + GA 
 
 
 

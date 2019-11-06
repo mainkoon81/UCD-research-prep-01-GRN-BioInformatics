@@ -114,6 +114,9 @@ b) neural-genetic approach
 
 By choosing appropriate GA mutation and crossover operators to alter the genes making up chromosomes, and by selecting “good” chromosomes(as determined by the ANN) at each generation, chromosomes in future generations should determine sets of genes that have the greatest effect in the data. 
 
+So ANN is a fitness function ???? 
+
+
 
 
 

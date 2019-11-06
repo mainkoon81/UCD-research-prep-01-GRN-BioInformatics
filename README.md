@@ -106,10 +106,10 @@ a) Evolutionary approach using genetic algorithms(GAs) to extract GRN from gene 
    
 b) neural-genetic approach   
  - __RGANN (Repeated Genetic Algorithm with Neural Network):__ A single layer ANN + GA 
-   - GA:
+   - GA: (to deal with "underdeterminism")
      - **one chromosome**(one individual) of the `GA` represents a small number of genes taken from the full set of genes. 
      - `GA` consists of a population of such chromosomes, and each chromosome is evaluated by the `ANN` for its **effect on every gene in the database** as part of **one generation**. 
-   - A single layer ANN: 
+   - A single layer ANN: (to deal with "feature selection")
      - `ANN` is used to check how well the expression values of these genes(input to the ANN) at one `timepoint` affect another gene’s expression values(output from the ANN) at the subsequent `timepoint`, over a number of temporal datapoints. 
 
 ## `Effect = weight`???

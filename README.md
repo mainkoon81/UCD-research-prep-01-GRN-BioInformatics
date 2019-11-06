@@ -112,6 +112,8 @@ b) neural-genetic approach
    - A single layer ANN: 
      - `ANN` is used to check how well the expression values of these genes(input to the ANN) at one `timepoint` affect another gene’s expression values(output from the ANN) at the subsequent `timepoint`, over a number of temporal datapoints. 
 
+## `Effect = weight`???
+
 By choosing appropriate GA mutation and crossover operators to alter the genes making up chromosomes, and by selecting “good” chromosomes(as determined by the ANN) at each generation, chromosomes in future generations should determine sets of genes that have the greatest effect in the data. 
 
 So `ANN with RootMSE` is a fitness function used for selection! 

@@ -117,7 +117,7 @@ By choosing appropriate GA mutation and crossover operators to alter the genes m
 So `ANN with RootMSE` is a fitness function used for selection! 
 
 GA tries to determine the correct excitatory(gene_on) and inhibitory(gene_off) values that link genes in a network. In ANN, gradient descent determines the weights. This architecture is combined with a GA for generating hypothetical links where the connectivity is restricted to a maximum of N. Thus we can make use of the `connectivity restrictions imposed by the biology of the problem` as well as the sigmoid activation function for the `learning aspect` of the problem. 
-<img src="https://user-images.githubusercontent.com/31917400/68312523-15995780-00ab-11ea-82bb-783f694d69a6.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/68314591-521a8280-00ae-11ea-8788-fccec157f761.jpg" />
 
 
 

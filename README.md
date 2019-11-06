@@ -113,6 +113,7 @@ b) neural-genetic approach
      - `ANN` is used to check how well the expression values of these genes(input to the ANN) at one `timepoint` affect another gene’s expression values(output from the ANN) at the subsequent `timepoint`, over a number of temporal datapoints. 
 
 ## `Effect = weight`???
+## `is it for a feature selection` ???
 
 By choosing appropriate GA mutation and crossover operators to alter the genes making up chromosomes, and by selecting “good” chromosomes(as determined by the ANN) at each generation, chromosomes in future generations should determine sets of genes that have the greatest effect in the data. 
 

@@ -141,13 +141,18 @@ The combinations of genes can be involved in affecting other genes. Therefore th
 ### For each gene in the network:
 <img src="https://user-images.githubusercontent.com/31917400/68314591-521a8280-00ae-11ea-8788-fccec157f761.jpg" />
 
+When all eight steps are completed, a network structure will be derived which consists of a set of incoming connections for each gene in the data set. 
 
+Inclusion of "null" genes
+ -  the chromosomes of the GA can consist of a number of “null” genes that do not correspond to genes in the data. This is to allow the GA to use a number of genes less than the n specified by the length of the chromosome, where these null genes have no bearing on the output of the sigmoid function. A further restriction is that there must be at least one non-null regulating gene for each regulated gene, and solutions that do not conform to this are heavily penalized, but not removed altogether. Due to the inclusion of null genes, each gene in the network will have a maximum of n incoming connections and a minimum of one. There is no restriction on the connections that a gene can possess beyond this number, i.e., a gene can regulate itself, and the number of times that a gene can regulate another is entirely unrestricted. Therefore, the only restrictions placed on the connectivity of the network are those imposed by the biology of the problem at hand. 
 
+An important feature of the algorithm is that it is also computationally efficient with respect to the number of genes that are present in the data and, so, can be applied to large-scale gene expression data on a standard PC.
 
+The stochastic nature of both algorithms (the GA and the ANN) means that the same results are not expected from each run of the algorithm. Also, even though the **number of connections** in the network is biologically plausible, there are often still too many to visualize as a network to yield information in a digestible format for biologists. The combination of both these factors has led to the creation of a **“repeated method” (RGANN)**. 
+ - Repeats the GA run 5 times for each “output” gene. 
+ - If a gene connection is present in a certain number of these runs (typically, three to four of them), the connection is added into an aggregate gene network with weight values equal to the average of those in the repeated runs. 
 
-
-
-
+This method is useful for discovering the most “significant” connections in the network in terms of repeated occurrences.
 
 
 

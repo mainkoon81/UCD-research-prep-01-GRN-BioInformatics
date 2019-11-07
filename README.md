@@ -120,7 +120,6 @@ By choosing appropriate GA mutation and crossover operators to alter the genes m
 So `ANN with RootMSE` is a fitness function used for selection!? 
 
 GA tries to determine the correct excitatory(gene_on) and inhibitory(gene_off) values that link genes in a network. In ANN, gradient descent determines the weights. This architecture is combined with a GA for generating hypothetical links where the connectivity is restricted to a maximum of N. Thus we can make use of the `connectivity restrictions imposed by the biology of the problem` as well as the sigmoid activation function(probability of gene_on) for the `learning aspect` of the problem. 
-<img src="https://user-images.githubusercontent.com/31917400/68314591-521a8280-00ae-11ea-8788-fccec157f761.jpg" />
 
 Data: 
  - > Artificial Data constructed from Boolean values
@@ -134,10 +133,13 @@ Data:
 
 The aim is to derive a gene connectivity model that fits the data. The hypothesis is that the **expression level of genes** `at a given time point` is assumed to be a **function of the expression levels** `at the previous time sample`. 
 
+How to combine gene expression values to give rise to the **expression values of the regulated gene**?
+ - Sums the activation of the regulating genes and passes them through the sigmoid function to give rise to the next set of expression values! then the actual output of the function is multiplied by the maximal gene expression value seen in the data. This, combined with a set of weights that connect the input and output genes, allows a direct comparison between desired gene expression values and actual output data from the ANN, for error calculation purposes. 
 
+The combinations of genes can be involved in affecting other genes. Therefore the algorithm must determine plausible combinations of gene connections in the network. The search is restricted to a small number (as a compromize to both biology and chaos theory this is set to 5) of genes for each network.
 
-
-
+### For each gene in the network:
+<img src="https://user-images.githubusercontent.com/31917400/68314591-521a8280-00ae-11ea-8788-fccec157f761.jpg" />
 
 
 

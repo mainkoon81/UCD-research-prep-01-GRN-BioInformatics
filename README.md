@@ -132,7 +132,7 @@ Data:
    - a sequence of DNA array is used to create a set of temporal gene expression values which are separated into pairs of **input** and **output data**. 
    - But often the time between experiments is not necessarily regular and the interactions between genes will be distributed over different time intervals, thus in many temporal gene expression experiments, measurements are taken frequently during the early part of the experiment (e.g., 1 hour, 2 hours, 3 hours, 4 hours) before larger gaps are introduced in the latter part (6 hours, 12 hours, 24 hours, 48 hours, etc.). 
 
-The aim is to derive a gene connectivity model that fits the data. The hypothesis is that the expression level of genes at a given time point is assumed to be a function of the expression levels at the previous time sample. 
+The aim is to derive a gene connectivity model that fits the data. The hypothesis is that the **expression level of genes** `at a given time point` is assumed to be a **function of the expression levels** `at the previous time sample`. 
 
 
 

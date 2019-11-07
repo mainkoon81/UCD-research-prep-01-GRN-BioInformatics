@@ -117,20 +117,22 @@ b) neural-genetic approach
 
 By choosing appropriate GA mutation and crossover operators to alter the genes making up chromosomes, and by selecting “good” chromosomes(as determined by the ANN) at each generation, chromosomes in future generations should determine sets of genes that have the greatest effect in the data. 
 
-So `ANN with RootMSE` is a fitness function used for selection! 
+So `ANN with RootMSE` is a fitness function used for selection!? 
 
-GA tries to determine the correct excitatory(gene_on) and inhibitory(gene_off) values that link genes in a network. In ANN, gradient descent determines the weights. This architecture is combined with a GA for generating hypothetical links where the connectivity is restricted to a maximum of N. Thus we can make use of the `connectivity restrictions imposed by the biology of the problem` as well as the sigmoid activation function for the `learning aspect` of the problem. 
+GA tries to determine the correct excitatory(gene_on) and inhibitory(gene_off) values that link genes in a network. In ANN, gradient descent determines the weights. This architecture is combined with a GA for generating hypothetical links where the connectivity is restricted to a maximum of N. Thus we can make use of the `connectivity restrictions imposed by the biology of the problem` as well as the sigmoid activation function(probability of gene_on) for the `learning aspect` of the problem. 
 <img src="https://user-images.githubusercontent.com/31917400/68314591-521a8280-00ae-11ea-8788-fccec157f761.jpg" />
 
+Data: 
+ - > Artificial Data constructed from Boolean values
+   - expression levels of genes at time `t1` based on the activation of genes at time `t0` (determined by logic functions)
+   - Interactions can only occur between any two successive timepoints-`t0`~`t1`.
+   - The data is therefore comprised of the **input data** (expression values at time `t0`) and **output data** (expression values at time `t1`) and these pairs of data are used to train the neural-genetic hybrid.
 
+ - > Real-world Data
+   - a sequence of DNA array is used to create a set of temporal gene expression values which are separated into pairs of **input** and **output data**. 
+   - But often the time between experiments is not necessarily regular and the interactions between genes will be distributed over different time intervals, thus in many temporal gene expression experiments, measurements are taken frequently during the early part of the experiment (e.g., 1 hour, 2 hours, 3 hours, 4 hours) before larger gaps are introduced in the latter part (6 hours, 12 hours, 24 hours, 48 hours, etc.). 
 
-
-
-
-
-
-
-
+The aim is to derive a gene connectivity model that fits the data. The hypothesis is that the expression level of genes at a given time point is assumed to be a function of the expression levels at the previous time sample. 
 
 
 

@@ -169,6 +169,10 @@ Protein is a building block of life that defines all physiological processes. An
 Gene is a special stretch(segment) of DNA where a sequence of A,C,T,G are coding for SOMETHING - eyes? hair? beauty?, etc. Gene contains some information: `protein recipies`.   
 <img src="https://user-images.githubusercontent.com/31917400/68552238-9be7cd80-040c-11ea-96c9-f435ea5e90ec.jpg" />
 
+Gene Expression level means "how much the gene is activated"...How much the process below happens...the expression levels are dynamic and it depends on several factors such as tissue type, timing, environment.  
+ - high level: high concentration of RNA, and the protein production
+ - low level: low concentration of RNA, and the protein production
+<img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
 
 
 

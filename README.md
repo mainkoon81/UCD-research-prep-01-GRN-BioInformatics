@@ -4,6 +4,7 @@ GRN is a collection of **molecular regulators** that interact with `each other` 
  - enzymes(catalyst) allows biochemical reaction to occur in our body like a researcher in the lab...like a lock that is open when a specific molecule works as a key.  
    - transcription process: DNA -> mRNA 
    - translation process: mRNA -> protein ... so manufacture human, fish,...
+<img src="https://user-images.githubusercontent.com/31917400/68552015-4f02f780-040a-11ea-8d92-bab607bba80f.jpg" />
 
 #### We want to derive full GRN involving regulatory elements and identify `connections and interactions` between genes:  
  - that fit the gene expression profile data and 
@@ -163,7 +164,10 @@ This method is useful for discovering the most “significant” connections in 
 --------------------------------------------------------------------------------------------------------------
 ## Biology
 ### The molecular basis for phenotypic variation
+Protein is a building block of life that defines all physiological processes. And the information to create these proteins is contained in the **`genome`**(A genome is an organism’s complete set of DNA, including all of its genes).
 
+Gene is a special stretch(segment) of DNA where a sequence of A,C,T,G are coding for SOMETHING - eyes? hair? beauty?, etc. Gene contains some information: `protein recipies`.   
+<img src="https://user-images.githubusercontent.com/31917400/68552238-9be7cd80-040c-11ea-96c9-f435ea5e90ec.jpg" />
 
 
 

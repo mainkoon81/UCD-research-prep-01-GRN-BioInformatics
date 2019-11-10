@@ -1,3 +1,17 @@
+## Biology
+### The molecular basis for phenotypic variation
+Protein is a building block of life that defines all physiological processes. And the information to create these proteins is contained in the **`genome`**(A genome is an organism’s complete set of DNA, including all of its genes).
+
+Gene is a special stretch(segment) of DNA where a sequence of A,C,T,G are coding for SOMETHING - eyes? hair? beauty?, etc. Gene contains some information: `protein recipies`.   
+<img src="https://user-images.githubusercontent.com/31917400/68552238-9be7cd80-040c-11ea-96c9-f435ea5e90ec.jpg" />
+
+Gene Expression level means "how much the gene is activated"...How much the process below happens...the expression levels are dynamic and it depends on several factors such as tissue type, timing, environment.  
+ - high level: high concentration of RNA, and the protein production
+ - low level: low concentration of RNA, and the protein production
+<img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
+
+
+---------------------------------------------------------------------------------------------
 # GRN and Gene_Expression_Analysis
 GRN is a collection of **molecular regulators** that interact with `each other` and with `other substances` in the cell to govern the gene expression levels of mRNA and proteins. These play a central role in morphogenesis, the creation of body structures. The regulator can be DNA, RNA, protein and complexes of these. The interaction can be direct or indirect. GRN model can be considered as a matrix(T_iXj) of positive, negative or zero connections by which one transcription factor can enhance or repress another.
  - The regulation is enhancing if the entry is positive and repressing if it is negative. A zero entry signifies no connection between gene product j and gene i. 
@@ -162,17 +176,6 @@ This method is useful for discovering the most “significant” connections in 
 
 
 --------------------------------------------------------------------------------------------------------------
-## Biology
-### The molecular basis for phenotypic variation
-Protein is a building block of life that defines all physiological processes. And the information to create these proteins is contained in the **`genome`**(A genome is an organism’s complete set of DNA, including all of its genes).
-
-Gene is a special stretch(segment) of DNA where a sequence of A,C,T,G are coding for SOMETHING - eyes? hair? beauty?, etc. Gene contains some information: `protein recipies`.   
-<img src="https://user-images.githubusercontent.com/31917400/68552238-9be7cd80-040c-11ea-96c9-f435ea5e90ec.jpg" />
-
-Gene Expression level means "how much the gene is activated"...How much the process below happens...the expression levels are dynamic and it depends on several factors such as tissue type, timing, environment.  
- - high level: high concentration of RNA, and the protein production
- - low level: low concentration of RNA, and the protein production
-<img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
 
 
 

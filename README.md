@@ -1,4 +1,4 @@
-## Biology
+## Basic Biology
 ### The molecular basis for phenotypic variation
 Protein is a building block of life that defines all physiological processes. And the information to create these proteins is contained in the **`genome`**(A genome is an organism’s complete set of DNA, including all of its genes).
 
@@ -11,7 +11,9 @@ means "how much the gene is activated"...How much the process below happens...th
  - low level: low concentration of RNA, and the protein production
 <img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
 
+> ## Can changes in DNA can explain the phenotypic variations? 
 
+> ## Can changes in the amount or structure of the messages(gene expression level? RNA?) have an effect on the phenotypic variations? 
 
 
 

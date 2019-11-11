@@ -11,11 +11,15 @@ means "how much the gene is activated"...How much the process below happens...th
  - low level: low concentration of RNA, and the protein production
 <img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
 
-> ## Can changes in DNA can explain the phenotypic variations? how to explain so many variability between people?
- - Some mutation get passed along....
- - SNP(Single Nucleotide Polymorphism): the most common type of genetic variation among people. Each SNP represents a difference in a single DNA building block, called a nucleotide("C","T","U"-pyrimidines & "A","G"-purines) . SNPs occur normally throughout a person’s DNA. They occur almost once in every 1,000 nucleotides on average, which means there are roughly 4 to 5 million SNPs in a person's genome. These variations may be unique or occur in many individuals
- - Although 99% of genome is identical, 
 > ## Can changes in the amount or structure of the messages(gene expression level? RNA?) have an effect on the phenotypic variations? 
+
+> ## Can changes in DNA can explain the phenotypic variations? how to explain so many variability between people?
+ - `mutations` that get passed along....
+ - SNP(Single Nucleotide Polymorphism): the most common type of genetic variation among people. 
+   - **Each SNP**(position, RefSNP_id, etc.) represents a **difference** in a single DNA building block, called a nucleotide ("C","T","U"-pyrimidines & "A","G"-purines) . 
+   - SNPs occur normally throughout a person’s DNA. They occur almost once in every 1,000 nucleotides on average, which means there are roughly 4 to 5 million SNPs in a person's genome. These variations may be unique or occur in many individuals. 
+   - SNP helps predict an individual’s response to certain drugs, susceptibility to ailments. SNP can also be used to track the inheritance of disease genes within families. Future studies will work to identify SNPs associated with complex diseases such as heart disease. 
+ - so we want to measure SNP for millions of sites at the same time.  
 
 ## 
 

@@ -15,13 +15,19 @@ means "how much the gene is activated"...How much the process below happens...th
 
 > ## Can changes in DNA can explain the phenotypic variations? how to explain so many variability between people?
  - `mutations` that get passed along....
- - SNP(Single Nucleotide Polymorphism): the most common type of genetic variation among people. 
-   - **Each SNP**(position, RefSNP_id, etc.) represents a **difference** in a single DNA building block, called a nucleotide ("C","T","U"-pyrimidines & "A","G"-purines) . 
+ - SNP(Single Nucleotide Polymorphism aka "genetic_variant"): the most common type of genetic variation among people. 
+   - **Each SNP**(each row with "position" field, "RefSNP_id" field, etc.) represents a **difference** in a single DNA building block, called a nucleotide ("C","T","U"-pyrimidines & "A","G"-purines) . 
    - SNPs occur normally throughout a person’s DNA. They occur almost once in every 1,000 nucleotides on average, which means there are roughly 4 to 5 million SNPs in a person's genome. These variations may be unique or occur in many individuals. 
    - SNP helps predict an individual’s response to certain drugs, susceptibility to ailments. SNP can also be used to track the inheritance of disease genes within families. Future studies will work to identify SNPs associated with complex diseases such as heart disease. 
  - so we want to measure SNP for millions of sites at the same time.  
 
-## 
+## GWAS (Genome-wide association studies) 
+Linking "SNP genotypes" to "disease risk"!!!!
+ - In a **case** group(specific disease are identified), "SNP chips" or "DNA sequencing" is used to obtain individuals' genotypes for a large number of SNP.
+ - In a **control** group(disease-free is identified and genotyped), 
+
+The **`genotype distributions` for all SNP** are compared between **cases** and **controls**, and those `SNP exhibiting association with disease` are investigated for potential insight into disruption of gene regulation or gene function. 
+
 
 
 

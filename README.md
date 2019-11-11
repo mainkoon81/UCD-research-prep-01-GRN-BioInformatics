@@ -5,10 +5,13 @@ Protein is a building block of life that defines all physiological processes. An
 Gene is a special stretch(segment) of DNA where a sequence of A,C,T,G are coding for SOMETHING - eyes? hair? beauty?, etc. Gene contains some information: `protein recipies`.   
 <img src="https://user-images.githubusercontent.com/31917400/68552238-9be7cd80-040c-11ea-96c9-f435ea5e90ec.jpg" />
 
+> ## How cells are different? How liver cell differ from colon cell? 
+ - The proteins define all of the physiological process, and the recipes to make these proteins come from **gene expression**.      
+
 ## Gene Expression level 
-means "how much the gene is activated"...How much the process below happens...the expression levels are dynamic and it depends on several factors such as tissue type, timing, environment.  
- - high level: high concentration of RNA, and the protein production
- - low level: low concentration of RNA, and the protein production
+means "how much the gene is activated"...How much the process in the pic below happens...the expression levels are dynamic and it depends on several factors such as tissue type, timing, environment.  
+ - high level: high concentration of RNA, and protein production
+ - low level: low concentration of RNA, and protein production
 <img src="https://user-images.githubusercontent.com/31917400/68552438-f84bec80-040e-11ea-95c8-bb6d4e615c48.jpg" />
 
 > ## Can changes in the amount or structure of the messages(gene expression level? RNA?) have an effect on the phenotypic variations? 

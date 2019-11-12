@@ -32,12 +32,6 @@ Linking "SNP genotypes" to "disease risk"!!!!
 The **`genotype distributions` for all SNP** are compared between **cases** and **controls**, and those `SNP exhibiting association with disease` are investigated for potential insight into disruption of gene regulation or gene function. 
 
 
-
-
-
-
-
-
 ---------------------------------------------------------------------------------------------
 # GRN and Gene_Expression_Analysis
 GRN is a collection of **molecular regulators** that interact with `each other` and with `other substances` in the cell to govern the gene expression levels of mRNA and proteins. These play a central role in morphogenesis, the creation of body structures. The regulator can be DNA, RNA, protein and complexes of these. The interaction can be direct or indirect. GRN model can be considered as a matrix(T_iXj) of positive, negative or zero connections by which one transcription factor can enhance or repress another.
@@ -125,6 +119,24 @@ Two common difficulties in **Gene_Expression_Analysis**:
    - the **class of the sample** or 
    - the **activation of the regulated gene**. 
    - coz...**one single gene is unlikely to classify a sample or affect another gene**. In such circumstances, the search space grows to a much larger potential search space of **countless combinations**.
+
+# High Throughput Data????
+## Microarray Technology
+It is a collection of microscopic DNA spots attached to a solid surface(lots of spots and each of which is filled with a specific gene product such as mRNA). Scientists use DNA microarrays to measure the expression levels of large numbers of genes simultaneously or to genotype multiple regions of a genome. They are counting molecules(DNA, RNA..etc.), using a **denaturing trick** turning the `double stranded` into `single stranded DNA`. 
+ - Microarrays use fluorescently tagged(different colored fluorescent marker) `RNA hybridization` to visualize the difference in the rate of transcription of a gene between two types of cells. 
+ - DNA hybridization is just taking two strands of complementary DNA and letting the anneal similar to how the RNA anneal in the wells of the microarray. We wouldn't do DNA hybridization in this procedure because the cancer cell and the normal cell would have basically the same genome and it would be really hard to distinguish which genes were causing the cancer if all the wells tell you similarities rather than differences.
+ - Applications
+   - 1) Gene_Expression level(detect RNA-upregulation) microarray  
+     - RNA or protein is a gene product.
+     - we compare the amount of gene products(cell proliferation level) between "problematic cell" vs "normal cell".
+     - The microarray heatmaps tells us whether specific gene is UpRegulated or DownRegulated. If a specific gene has no changes, it shows some inbetween color? In this way, it helps personalized therapy.    
+   
+   - 2) Genotyping(detect SNP) microarray
+
+
+
+
+
 
 ## Extracting GRN from temporal gene expression data 
 How to deal with "curse of dimensionality" (large number of different models that display broadly the same behavior) caused mainly by "underdeterminism"..?

@@ -120,7 +120,7 @@ Two common difficulties in **Gene_Expression_Analysis**:
    - the **activation of the regulated gene**. 
    - coz...**one single gene is unlikely to classify a sample or affect another gene**. In such circumstances, the search space grows to a much larger potential search space of **countless combinations**.
 
-# High Throughput Data????
+# [Inference with High Throughput Data]
 ## Microarray Technology
 It is a collection of microscopic DNA spots attached to a solid surface(lots of spots and each of which is filled with a specific gene product such as mRNA). Scientists use DNA microarrays to measure the expression levels of large numbers of genes simultaneously or to genotype multiple regions of a genome. They are counting molecules(DNA, RNA..etc.), using a **denaturing trick** turning the `double stranded` into `single stranded DNA`. 
  - Applications
@@ -129,10 +129,51 @@ It is a collection of microscopic DNA spots attached to a solid surface(lots of 
      - we compare the amount of gene products(cell proliferation level) between "problematic cell" vs "normal cell".
      - The microarray heatmaps tells us whether specific gene is UpRegulated or DownRegulated(If a specific gene has no changes, it shows some inbetween color?) In this way, it helps personalized therapy??    
      - Microarrays use fluorescently tagged(different colored fluorescent marker) `RNA hybridization` to visualize the difference in the rate of transcription of a gene between two types of cells. 
-     - DNA hybridization is just taking two strands of complementary DNA and letting the anneal similar to how the RNA anneal in the wells of the microarray. We wouldn't do DNA hybridization in this procedure because the cancer cell and the normal cell would have basically the same genome and it would be really hard to distinguish which genes were causing the cancer if all the wells tell you similarities rather than differences.
+     - FYI, DNA hybridization is just taking two strands of complementary DNA and letting the anneal similar to how the RNA anneal in the wells of the microarray. We wouldn't do DNA hybridization in this procedure because the cancer cell and the normal cell would have basically the same genome and it would be really hard to distinguish which genes were causing the cancer if all the wells tell you similarities rather than differences.
    
    - __2) Genotyping__(detect SNP) microarray
      - We can detect millions of SNP at once which is very popular in GWAS where scientists genotype many individuals with disease/withoud disease and try to decipher which locations on the genome are associated with differences on the genome associated with a particular disease.   
+
+In the 1990s, the analysis of gene expression data amounted to spotting black dots on a piece of paper. With high-throughput technologies such as "microarrays", this suddenly changed to sifting through tens of thousands of numbers. Biologists went from using their eyes or simple summaries to categorize results to having thousands (and now millions) of measurements per sample to analyze. Here we will discuss about the statistical techniques that have been widely used with these technologies.
+
+## High-throughput data
+If we have measurements from many many features taken simultaneously such as "gene_expression", "microarray", "genotyping", "FMRI",etc. There is a typical way to organize the information. They typically present three tables:
+ - 1) Matrix of actual measurements
+   - ex) Gene_Expression: genes and samples
+ - 2) Table of features
+   - It says gene information
+   - ex) a bunch of different genes, gene_annotation
+ - 3) Table of individual records
+   - It says which features come from which group 
+   - ex) experimental units or samples that come with **Group labelling**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

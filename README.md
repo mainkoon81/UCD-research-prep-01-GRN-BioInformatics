@@ -144,7 +144,7 @@ If we have measurements from many many features taken simultaneously such as "ge
    - It says gene information
    - ex) a bunch of different genes, gene_annotation
  - 3) Table of individual records
-   - It says which features come from which group 
+   - It says which features come from which group.. 
    - ex) experimental units or samples that come with **Group labelling**
 
 
